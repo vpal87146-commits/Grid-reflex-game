@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Reflex Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      cursor: pointer;
+    }
+    .active {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid Reflex Game</h1>
+  <h2>Score: <span id="score">0</span></h2>
+  <h3 id="timer">Time: 30</h3>
+  <div class="grid" id="grid"></div>
+  <script src="practice.js"></script>
+</body>
+</html>
